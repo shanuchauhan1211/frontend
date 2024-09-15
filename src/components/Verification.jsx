@@ -9,7 +9,7 @@ console.log(Userdata)
 const handleVerification = async (e) => {
   e.preventDefault()
 try {
-  const response = await axios.post("http://localhost:5000/User/verifyEmail", {
+  const response = await axios.post("https://backend-qjwv.onrender.com/User/verifyEmail", {
     userId: Userdata.data.userId,
     otp: verifyotp,
   });

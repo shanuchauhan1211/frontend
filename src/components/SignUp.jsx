@@ -18,7 +18,7 @@ export default function SignUp({log,setLog}){
         e.preventDefault();
     if(signUser.password === signUser.confirm){
         try {
-          const response = await axios.post("http://localhost:5000/User/NewUser", {
+          const response = await axios.post("https://backend-qjwv.onrender.com/User/NewUser", {
             firstname: signUser.firstname,
             lastname: signUser.lastname,
             password: signUser.password,

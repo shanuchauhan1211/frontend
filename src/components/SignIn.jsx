@@ -13,7 +13,7 @@ export default function SignIn({log,setLog}){
   const handleLogin = async (e) => {
   e.preventDefault()
 try {
-  const response = await axios.post("http://localhost:5000/User/logIn", {
+  const response = await axios.post("https://backend-qjwv.onrender.com/User/logIn", {
     email: logUser.email,
     password: logUser.password,
   });
