@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Dashboard(){
     const navigate = useNavigate();
 const data = JSON.parse(localStorage.getItem('Token'));
-console.log(data)
+//console.log(data)
     return(
         <>
         <div className='h-screen w-full'>

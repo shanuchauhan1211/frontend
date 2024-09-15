@@ -5,7 +5,7 @@ export default function Verification() {
   const navigate = useNavigate();
 const [verifyotp,setVerifyotp]= useState('');
 const Userdata = JSON.parse(localStorage.getItem("Userdata"));
-console.log(Userdata)
+//console.log(Userdata)
 const handleVerification = async (e) => {
   e.preventDefault()
 try {
@@ -14,8 +14,8 @@ try {
     otp: verifyotp,
   });
   if (response.status === 200) {
-    console.log(response);
-    console.log(response.data);
+    // console.log(response);
+    // console.log(response.data);
    localStorage.removeItem("Userdata");
   } else {
     console.log("hey");

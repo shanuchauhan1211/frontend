@@ -18,10 +18,10 @@ try {
     password: logUser.password,
   });
   if (response.status === 200) {
-    console.log(response);
-    console.log(response.data);
+    // console.log(response);
+    // console.log(response.data);
     token_key = JSON.stringify(jwtDecode(response.data.token));
-    console.log(token_key);
+   // console.log(token_key);
     localStorage.setItem("Token", token_key);
   } else {
     console.log("hey");

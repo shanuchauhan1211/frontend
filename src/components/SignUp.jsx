@@ -24,7 +24,7 @@ export default function SignUp({log,setLog}){
             password: signUser.password,
             email: signUser.email,
           });
-          console.log(response);
+       //   console.log(response);
          
           alert("User Created");
           token_key = JSON.stringify(response.data);
